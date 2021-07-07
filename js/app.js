@@ -14,11 +14,12 @@ let score = 0;
 
 
 
-// Question 1:
 
 let myorgin = prompt('Am I from Jordan?');
 
 myorgin = myorgin.toLowerCase();
+
+function question1 (){
 
 if (myorgin === 'yes' || myorgin === 'y') {
 
@@ -39,13 +40,16 @@ else {
     alert('your answer should be yes or no . try again ')
 }
 
+}
+question1();
+
+ 
 
 
-//  Question2:
 
 let myage = prompt('Im 25 now , If I was born 3 years age, would my age be 22')
 myage = myage.toLowerCase();
-
+ function  question2 (){
 if (myage === 'yes' || myage === 'y') {
 
     // console.log(myage);
@@ -65,15 +69,16 @@ else {
     alert('your answer should be yes or no . try again ');
 }
 
+ }
+
+ question2 ( );
 
 
-
-// Question3:
 
 let mycountry = prompt('Does Jordan have many seas without any water like Yemen ?');
 
 mycountry = mycountry.toLowerCase();
-
+ function Question3 (){
 if (mycountry === 'yes' || mycountry === 'y') {
 
     // console.log(mycountry);
@@ -95,15 +100,20 @@ else {
     alert('your answer should be yes or no . try again ');
 }
 
+ }
+
+
+ Question3 () ;
 
 
 
 
-// Question4:
+
+
 let mydrinks = prompt('Do I drink hot drinks in summer?');
 
 mydrinks = mydrinks.toLowerCase();
-
+ function Question4 () {
 if (mydrinks === 'yes' || mydrinks === 'y') {
 
     alert(`drinks cant be eaten, good job`);
@@ -122,15 +132,17 @@ else {
 
     alert('your answer should be yes or no . try again ');
 }
+}
+
+
+Question4 () ;
 
 
 
-
-// Question5:
 
 let pets = prompt('Are pets annoying me?');
 pets = pets.toLowerCase();
-
+ function Question5(){
 if (pets === 'yes' || pets === 'y') {
 
     // console.log(pets);
@@ -157,8 +169,9 @@ alert('It was a funny game ' + yourname + 'now  you will get to know better');
 
 
 
+}
 
-
+Question5 ();
 
 // Question6:
 let number = Number(prompt('Since when I have been staying in Jordan? choose a number from 1996 to 2021'))
