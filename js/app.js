@@ -12,6 +12,8 @@ let score = 0;
 
 
 
+
+
 // Question 1:
 
 let myorgin = prompt('Am I from Jordan?');
@@ -152,6 +154,9 @@ else {
 
 
 alert('It was a funny game ' + yourname + 'now  you will get to know better');
+
+
+
 
 
 
