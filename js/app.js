@@ -12,98 +12,91 @@ let score = 0;
 
 
 
-
-
-
 let myorgin = prompt('Am I from Jordan?');
-
 myorgin = myorgin.toLowerCase();
 
-function question1 (){
 
-if (myorgin === 'yes' || myorgin === 'y') {
+function question1() {
 
-    // console.log(myorgin);
-    alert(`Nope, your wrong ${yourname} I\'m from Yemen`)
+    if (myorgin === 'yes' || myorgin === 'y') {
+
+        alert(`Nope, your wrong ${yourname} I\'m from Yemen`)
+    }
+
+    else if (myorgin === 'no' || myorgin === 'n') {
+
+        alert(`Thats coreect ${yourname} I\'m from Yemen`)
+
+        score++;
+    }
+
+    else {
+
+        alert('your answer should be yes or no . try again ')
+    }
+
 }
 
-else if (myorgin === 'no' || myorgin === 'n') {
-
-    alert(`Thats coreect ${yourname} I\'m from Yemen`)
-    // console.log(myorgin);
-
-    score++;
-}
-
-else {
-
-    alert('your answer should be yes or no . try again ')
-}
-
-}
 question1();
 
- 
+
 
 
 
 let myage = prompt('Im 25 now , If I was born 3 years age, would my age be 22')
 myage = myage.toLowerCase();
- function  question2 (){
-if (myage === 'yes' || myage === 'y') {
 
-    // console.log(myage);
-    alert(`Are you fine! ${yourname} I would be 3 years only, Think about it`);
+function question2() {
+    if (myage === 'yes' || myage === 'y') {
+
+        alert(`Are you fine! ${yourname} I would be 3 years only, Think about it`);
+    }
+
+    else if (myage === 'no' || myage === 'n') {
+
+        alert(`youre a wake, good job ${yourname}`);
+        score++;
+
+    }
+
+    else {
+
+        alert('your answer should be yes or no . try again ');
+    }
+
 }
 
-else if (myage === 'no' || myage === 'n') {
-
-    alert(`youre a wake, good job ${yourname}`);
-    // console.log(myage);
-    score++;
-
-}
-
-else {
-
-    alert('your answer should be yes or no . try again ');
-}
-
- }
-
- question2 ( );
+question2();
 
 
 
 let mycountry = prompt('Does Jordan have many seas without any water like Yemen ?');
-
 mycountry = mycountry.toLowerCase();
- function Question3 (){
-if (mycountry === 'yes' || mycountry === 'y') {
 
-    // console.log(mycountry);
 
-    alert('Thats cool, your right ' + ' its on the map, its funny');
+function question3() {
+    if (mycountry === 'yes' || mycountry === 'y') {
 
-    score++;
+        alert('Thats cool, your right ' + ' its on the map, its funny');
+
+        score++;
+
+    }
+
+    else if (mycountry === 'no' || mycountry === 'n') {
+
+        alert('Opps, your wrong ' + yourname + ' its on the map, its funny');
+    }
+
+    else {
+
+        alert('your answer should be yes or no . try again ');
+    }
 
 }
 
-else if (mycountry === 'no' || mycountry === 'n') {
 
-    alert('Opps, your wrong ' + yourname + ' its on the map, its funny');
-    // console.log(mycountry);
-}
-
-else {
-
-    alert('your answer should be yes or no . try again ');
-}
-
- }
-
-
- Question3 () ;
+question3();
 
 
 
@@ -111,74 +104,75 @@ else {
 
 
 let mydrinks = prompt('Do I drink hot drinks in summer?');
-
 mydrinks = mydrinks.toLowerCase();
- function Question4 () {
-if (mydrinks === 'yes' || mydrinks === 'y') {
 
-    alert(`drinks cant be eaten, good job`);
 
-    score++;
+function question4() {
+    if (mydrinks === 'yes' || mydrinks === 'y') {
 
+        alert(`drinks cant be eaten, good job`);
+
+        score++;
+
+    }
+
+    else if (mydrinks === 'no' || mydrinks === 'n') {
+
+        alert(`Absoultly yes, think about it ${yourname}, we cant drink them`);
+    }
+
+    else {
+
+        alert('your answer should be yes or no . try again ');
+    }
 }
 
-else if (mydrinks === 'no' || mydrinks === 'n') {
 
-    alert(`Absoultly yes, think about it ${yourname}, we cant drink them`);
-    // console.log(mydrinks);
-}
-
-else {
-
-    alert('your answer should be yes or no . try again ');
-}
-}
-
-
-Question4 () ;
+question4();
 
 
 
 
 let pets = prompt('Are pets annoying me?');
 pets = pets.toLowerCase();
- function Question5(){
-if (pets === 'yes' || pets === 'y') {
 
-    // console.log(pets);
-    alert('Thats cool, your right' + ' I hate them');
 
-    score++;
+function question5() {
+    if (pets === 'yes' || pets === 'y') {
+
+        alert('Thats cool, your right' + ' I hate them');
+
+        score++;
+
+    }
+
+    else if (pets === 'no' || pets === 'n') {
+
+        alert('Opps, your wrong' + yourname);
+    }
+
+    else {
+
+        alert('your answer should be yes or no . try again ');
+    }
+
+
+
+    alert('It was a funny game ' + yourname + 'now  you will get to know better');
+
+
 
 }
 
-else if (pets === 'no' || pets === 'n') {
-
-    alert('Opps, your wrong' + yourname);
-    // console.log(pets);
-}
-
-else {
-
-    alert('your answer should be yes or no . try again ');
-}
+question5();
 
 
-
-alert('It was a funny game ' + yourname + 'now  you will get to know better');
-
-
-
-}
-
-Question5 ();
 
 // Question6:
 let number = Number(prompt('Since when I have been staying in Jordan? choose a number from 1996 to 2021'))
 
 
 for (let i = 1; i < 4; i++) {
-
 
 
     if (number === 2015) {
@@ -217,13 +211,10 @@ alert('The answer is 2015');
 let visitedcountry = prompt('Which countries that Ive visted them?')
 let country = ['syria', 'turkey', 'egypt', 'libya']
 let answer = 'false'
+
+
 for (let i = 0; i <= 4; i++) {
     for (let j = 0; j < country.length; j++) {
-        // console.log(country)
-
-
-
-
         if (visitedcountry == country[j]) {
 
             answer = 'true'

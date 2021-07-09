@@ -15,3 +15,7 @@ I build *about-me* website with a direct and powerful purpose. It does all of th
 2. The other question was adding an array to store multiple choices and it was really the hardest and mose intresting one
 3. doing styling "simple one " to html
 4. using loops in my codes
+* I was a navigator on https://github.com/HaninHaidrah/about-me/pull/1/ 
+
+* I was a drive on https://github.com/HaninHaidrah/about-me-1  
+
